@@ -77,6 +77,7 @@ img {
 
 .nav-header {
     display: flex;
+    align-items: center;
 }
 
 .nav-link {
@@ -130,7 +131,7 @@ img {
     text-align: center;
     color: #fff;
     margin: 0 auto 48px;
-    width: 496px;
+    max-width: 496px;
     
 }
 .hero-button {
@@ -142,7 +143,7 @@ img {
     background-color: #4d5ae5;
     border-radius: 4px;
     padding: 16px 32px;
-    width: 170px;
+    min-width: 169px;
     height: 56px;
     margin: 0 auto;
     display: block;
@@ -175,7 +176,7 @@ img {
 
 .features-list {
     display: flex;
-    gap: 24px;
+    flex-basis: calc((100% - 72px) / 4))
 }
 
 .features-item-header {
@@ -184,6 +185,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .features-item-paragraf {
     font-size: 16px;
@@ -208,9 +210,14 @@ img {
     margin-bottom: 72px;
 }
 
+.team-item-name {
+    padding: 32px 0;
+}
+
 .team-list {
     display: flex;
     gap: 24px;
+    border-radius: 0 0 4px 4px;
 }
 
 .team-item {
@@ -223,6 +230,7 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .team-paragraf {
         line-height: 1.5;
@@ -289,13 +297,14 @@ img {
 }
 
 .logo-footer {
+    margin-bottom: 16px;
+    display: inline-block;
 }
 
 .logo-footer .logo-accent {
     color: #f4f4fd;
-    display: inline-block;
-    margin-bottom: 16px;
 }
+
 .footer-paragraf {
 font-family: "Roboto", sans-serif;
 font-weight: 400;
