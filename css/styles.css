@@ -176,7 +176,11 @@ img {
 
 .features-list {
     display: flex;
-    flex-basis: calc((100% - 72px) / 4))
+    gap: 24px;
+}
+
+.features-item {
+    width: calc((100% - 72px) / 4))
 }
 
 .features-item-header {
@@ -217,11 +221,11 @@ img {
 .team-list {
     display: flex;
     gap: 24px;
-    border-radius: 0 0 4px 4px;
 }
 
 .team-item {
     background-color: #fff;
+    border-radius: 0 0 4px 4px;
 }
 .team-name {
     font-weight: 500;
